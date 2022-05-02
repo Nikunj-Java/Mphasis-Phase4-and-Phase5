@@ -7,18 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     
-    
 </head>
-<body>
+<body data-spy="scroll" target=".navbar">
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <a href="#" class="navbar-brand">SimpliLearn</a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="#" class="nav-link" >Home</a>
+                <a href="#home" class="nav-link" >Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link" >About us</a>
+                <a href="#aboutus" class="nav-link" >About us</a>
             </li>
             <li class="nav-item">
                  <a href="#" class="nav-link dropdown-toggle" id="mydropdown" data-toggle="dropdown">Services</a>
@@ -30,15 +31,37 @@
              </li>
 
              <li class="nav-item">
-                <a href="#" class="nav-link" >Contact us</a>
+                <a href="#contactus" class="nav-link" >Contact us</a>
             </li>
         </ul>
     </nav>
 
 
-    
-    
 
+    <div id="home" class="container-fluid bg-success" style="padding-top: 80px; padding-bottom: 80px;">
+        <h1>Home Section</h1>
+        <h2> This is my First Section</h2>
+        <h3>Home Section</h3>
+        <p>Scroll here to get idea of scrollspy</p>
+    </div>
+
+
+    <div id="aboutus" class="container-fluid bg-primary" style="padding-top: 80px; padding-bottom: 80px;">
+        <h1>About Us Section</h1>
+        <h2> This is my Second Section</h2>
+        <h3>About Us Section</h3>
+        <p>Scroll here to get idea of scrollspy</p>
+    </div>
+
+
+
+    <div id="contactus" class="container-fluid bg-warning" style="padding-top: 80px; padding-bottom: 80px;">
+        <h1>Contact Us Section</h1>
+        <h2> This is my Third Section</h2>
+        <h3>Contact Us Section</h3>
+        <p>Scroll here to get idea of scrollspy</p>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
    
