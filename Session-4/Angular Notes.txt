@@ -153,3 +153,67 @@ save it and you will be able to see the out put in browser
 similarly you can generate footer component and integrate in app using the above steps
 
 
+----------------------------------------------------------------------------
+step:5 DATA BINDING
+----------------------------------------------------------------------------
+
+types:
+1. source to view (.ts to .html)
+2. view to source (.html to .ts)
+3. source-to-view-to-source (two way binding)
+
+
+
+data binding can be done in two ways
+	1. Interpolation Binding {{}}
+	2. Property Binding[]
+
+
+let's prepare binding component from node js ny following command
+
+> ng g c binding   ///binding is a name of component 
+
+
+
+to bind the data go to binding.component.ts----and add following at the bottom
+
+
+	 name:string="Nikunj Soni";
+  	 url:string="https://www.google.com";
+
+goto> binding.component.html and add the following code
+
+
+
+<h2>Data Binding</h2>
+
+<!--use this for interpolation : {{}}-->
+<h2>Let's Bind the data from source to view using interpolation </h2>
+
+<hr>
+
+<p>{{name}}</p>
+
+
+<h2>Let's Bind the data from source to view using Property Binding: [] : bind the value with attribute</h2>
+
+<hr>
+<a [href]="url">Connect to Google</a>
+
+
+
+
+
+now goto>app.component.html and copy the selector tag of app-binding
+
+
+
+<app-binding></app-binding>
+
+
+save it and check the output in browser
+
+
+
+
+
