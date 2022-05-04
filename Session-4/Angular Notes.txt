@@ -1,0 +1,77 @@
+install node js from link:
+https://nodejs.org/en/download/
+--------------------------------------------------
+step: 1
+--------------------------------------------------
+
+1. to check the version of node
+
+>open cmd> node -v
+	output: v16.14.2
+2. NPM manager- node package manager
+----provides the bundles of packages which we can download directly using CMD
+----ex. angular,react,view JS,typescript,bootstrap
+----NPM installed automatocally whenever you Install node js in your system
+----to check the version of NPM
+
+>npm -v 
+	output: 8.5.0
+
+
+-------------------------------------------------------
+
+step2: INSTALLING TYPESCRIPT
+
+-------------------------------------------------------
+
+> npm install typescript -g
+
+to check the version
+
+>tsc -v
+	output: version 4.6.3
+
+
+----prepare one first.ts file in visual studio code  as below-------
+
+first.ts
+-----------------------------------------------------------------------
+let a:number;
+a=56;
+
+let b:number=12;
+
+let fname:string="Nikunj";
+
+console.log(a+b);
+
+console.log(fname);
+
+
+function test(num1:number,num2:number):number
+{
+    return num1+num2;
+}
+
+console.log(test(2,3));
+
+-------------------------------------------------------------------------
+
+goto terminal>new terminal>open cmd
+
+>tsc first.ts
+
+you will see that a new file named as 'first.js' is automatically prepared in the folder
+
+>node first.js
+
+you will see out put in console
+
+
+preparing 'tsconfig.json' file : it is a file to configure json file
+
+how .ts converts .js we can configure in this file
+
+>tsc --init (will create tsconfig.json file and we can check the same)
+
+
