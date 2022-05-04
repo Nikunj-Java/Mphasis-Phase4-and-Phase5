@@ -150,3 +150,6 @@ write
 save it and you will be able to see the out put in browser
 
 
+similarly you can generate footer component and integrate in app using the above steps
+
+
