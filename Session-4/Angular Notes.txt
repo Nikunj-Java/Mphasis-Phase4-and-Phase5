@@ -213,6 +213,86 @@ now goto>app.component.html and copy the selector tag of app-binding
 
 save it and check the output in browser
 
+***************************************************************************
+STEP:6 CLASS AND STYLE BINDING
+***************************************************************************
+
+----prepare one array of products in bindings.component.ts
+
+products=[{name:"pencil",price:"8.3",available:"05-05-2022",rating:4.8},
+            {name:"pen",price:"10",available:"10-05-2022",rating:4.6},
+            {name:"eraser",price:"5.5",available:"05-06-2022",rating:5},
+            {name:"scale",price:"20",available:"05-08-2022",rating:4},
+            {name:"strencil",price:"15",available:"05-09-2022",rating:3.5},
+          ]
+
+
+goto> binding.component.html to print the array using table along with ngDirective
+
+<h3>Print JSON Array</h3>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th> 
+            <th>Availability</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--ngDirectives-->
+        <tr *ngFor="let p of products">
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.available}}</td>
+            <td>{{p.rating}}</td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+[*Note: to implement bootstrap ia angular app include css and script file from bootstrap official website to index.html file as we do in html page]
+
+
+
+
+step:a class binding
+
+-prepare one class named inStock in binding.component.css
+
+
+
+.inStock{
+background-color: green;
+color: white;
+font-size: 15px;
+}
+
+
+
+goto binding.component.html file and bind the class using
+
+
+ <td [class.inStock]="true">{{p.name}}</td>
+
+
+step: b style binding
+
+
+prepare one number with any name say 'we' in binding.component.ts
+
+we:number=700;
+
+now bind the style in binding.component.html
+
+ <td [style.font-weight]="we">{{p.price}}</td>
+
+save the file and check the out put in browser
+
+
+
 
 
 
