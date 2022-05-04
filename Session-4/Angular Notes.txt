@@ -293,6 +293,13 @@ save the file and check the out put in browser
 
 
 
+**************************************************************************
+STEP :7 EVENT BINDING
+**************************************************************************
+
+prepare one button and div in html like below
+
+
 
 
 

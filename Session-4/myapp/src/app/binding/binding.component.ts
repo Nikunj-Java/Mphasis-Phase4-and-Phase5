@@ -24,4 +24,9 @@ export class BindingComponent implements OnInit {
             {name:"strencil",price:"15",available:"05-09-2022",rating:3.5},
           ]
 
+  flag=false;
+  show(){
+    this.flag=!this.flag;
+  }
+
 }
