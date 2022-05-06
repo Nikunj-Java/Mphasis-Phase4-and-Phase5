@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomPipe } from './custompipe';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PipedemoComponent,
-    CustomPipe
+    CustomPipe,
+    AboutusComponent,
+    ContactusComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
