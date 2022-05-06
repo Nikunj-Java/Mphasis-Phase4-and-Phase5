@@ -8,6 +8,7 @@ import { PipedemoComponent } from './pipedemo/pipedemo.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { UserComponent } from './user/user.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserComponent } from './user/user.component';
     CustomPipe,
     AboutusComponent,
     ContactusComponent,
-    UserComponent
+    UserComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
