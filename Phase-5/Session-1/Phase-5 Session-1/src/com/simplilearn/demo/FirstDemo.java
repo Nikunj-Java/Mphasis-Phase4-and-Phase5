@@ -21,7 +21,6 @@ public class FirstDemo {
 		//step:3 launching google chrome
 		driver.get(base_url);
 		
-	
 		driver.close();
 		
 	}
