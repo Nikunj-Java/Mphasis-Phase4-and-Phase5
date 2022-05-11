@@ -1,0 +1,22 @@
+<h1> Details </h1>
+<h1> Details </h1>
+<table>
+
+    <thead>
+      <tr>
+         <th>Id</th><th>Tittle</th><th>Price</th><th>Available</th>
+      </tr>
+     </thead>
+      <tbody>
+          <tr *ngFor="let p of products">
+
+             <td>{{p.id}}</td>
+             <td>{{p.title}}</td>
+             <td>{{p.price}}</td>
+             <td>{{p.available}}</td>
+
+          </tr>
+      </tbody>
+ 
+</table>
+
