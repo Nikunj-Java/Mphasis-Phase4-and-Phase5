@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.simplilearn.demo.GroupTest">
+      <class name="com.simplilearn.demo.AssertionDemo">
         <methods>
-          <include name="loginwithFirefox"/>
-          <include name="launchFirefox"/>
+          <include name="tittleTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.simplilearn.demo.GroupTest -->
+      </class> <!-- com.simplilearn.demo.AssertionDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
