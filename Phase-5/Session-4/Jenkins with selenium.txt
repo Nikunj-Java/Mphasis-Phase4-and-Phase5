@@ -26,3 +26,44 @@ cd ProgramFiles
 
 6. select install suggested plugins
 7. add personal details and registration
+
+
+--------------------------------------------------------------------------
+
+Jenkins Part:
+
+goto> manage jenkins> manage plugin> available> search for maven integration> install without restart
+
+goto> Dashboard> Create new Job> Give project name and choose maven project
+
+click on the error that you are getting or
+goto> builtool from jenkis to add java home path
+
+JDK:
+
+name: JAVA_HOME
+path: C:\Program Files\Java\jdk1.8.0_202\
+
+
+scroll down and add maven
+
+MAVEN:
+
+goto>eclips>windows>preferences>maven>intsallation
+choose the same version as the version is there on your eclips
+
+save it 
+
+now come back to your project and add pom.xml file path
+
+
+D:\Workspace-phase5\Phase-5_Session-3\pom.xml
+
+
+in GOALS and OPTION write:
+clean test
+Click on apply and save
+
+click on build now
+
+
