@@ -15,7 +15,7 @@ copy the selenium standalone jar file to desire directory
 
 open cmd and change the directory where you had copied selenium standalone server.jar file
 
-> java -jar selenium-standalone-server-3.5.0.jar -role hub
+> java -jar selenium-server-standalone-3.5.0.jar -role hub
 
 			********EXTRA****************
 suppose you are getting an error like port is already in use
