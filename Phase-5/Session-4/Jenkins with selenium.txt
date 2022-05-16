@@ -49,6 +49,8 @@ scroll down and add maven
 
 MAVEN:
 
+name: maven
+
 goto>eclips>windows>preferences>maven>intsallation
 choose the same version as the version is there on your eclips
 
