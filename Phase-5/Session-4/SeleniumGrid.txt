@@ -1,0 +1,52 @@
+****************************************************************************
+Steps: 1 download selenium standalomne jar file
+****************************************************************************
+
+link:https://selenium-release.storage.googleapis.com/index.html?path=3.5/
+
+
+download selenium-standalone-server-3.5.0 or 3.5.-3.jar file
+
+
+*****************************************************************************Step: 2 Setting Up a Hub
+*****************************************************************************
+
+copy the selenium standalone jar file to desire directory
+
+open cmd and change the directory where you had copied selenium standalone server.jar file
+
+> java -jar selenium-standalone-server-3.5.0.jar -role hub
+
+			********EXTRA****************
+suppose you are getting an error like port is already in use
+
+>  java -jar selenium-standalone-server-3.5.0.jar -role hub -port 4445
+
+
+***************************************************************************
+STEP: 3 PREPARING NODE
+***************************************************************************
+
+now open another cmd and move to the same directory and prepare the node as below
+
+
+let's prepare node with googlechome driver
+
+> java -Dwebdriver.chrome.driver="C:\Program Files\Google\Chrome\Application\chromedriver.exe" -jar selenium-server-standalone-3.5.0.jar -role node -hub http://192.168.43.109:4444/grid/register/
+
+
+
+check the previous cmd there you will see that
+
+>Registered a node http://192.168.43.109:5555
+
+
+now go to> 
+
+http://192.168.43.109:4444/grid/console
+
+
+
+
+
+
