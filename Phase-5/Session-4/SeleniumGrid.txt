@@ -32,7 +32,7 @@ now open another cmd and move to the same directory and prepare the node as belo
 
 let's prepare node with googlechome driver
 
-> java -Dwebdriver.chrome.driver="C:\Program Files\Google\Chrome\Application\chromedriver.exe" -jar selenium-server-standalone-3.5.0.jar -role node -hub http://192.168.43.109:4444/grid/register/
+> java -Dwebdriver.chrome.driver="C:\Program Files\Google\Chrome\Application\chromedriver.exe" -jar selenium-server-standalone-3.5.0.jar -role node -port 4455 -hub http://192.168.43.109:4444/grid/register/
 
 
 
@@ -46,7 +46,30 @@ now go to>
 http://192.168.43.109:4444/grid/console
 
 
+*****************************************************************************
+Prepare another node
 
 
 
+let's prepare node with googlechome driver
 
+> java -Dwebdriver.chrome.driver="C:\Program Files\Google\Chrome\Application\chromedriver.exe" -jar selenium-server-standalone-3.5.0.jar -role node -port 4456 -hub http://192.168.43.109:4444/grid/register/
+
+*****************************************************************************
+Step:4 Preparing Custom Node and Hub
+*****************************************************************************link: download the hub config and node config file and save it as .json file
+
+https://www.selenium.dev/documentation/legacy/selenium_3/grid_setup/
+
+
+once this is done close all running cmd
+
+
+lets start custom hub:
+
+> java -jar selenium-server-standalone-3.5.0.jar -role hub -hubConfig myhubconfig.json
+
+
+lets start custtom node:
+
+>java -Dwebdriver.chrome.driver="C:\Program Files\Google\Chrome\Application\chromedriver.exe" -jar selenium-server-standalone-3.5.0.jar -role node -nodeConfig nodeconfig.json
